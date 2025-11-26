@@ -1,37 +1,49 @@
+<!--declare document type as html5-->
 <!DOCTYPE html>
+<!--open html document with language set to english-->
 <html lang="en">
+<!--head section with metadata and stylesheet link-->
 <head>
+  <!--set character encoding-->
   <meta charset="UTF-8">
+  <!--set viewport for responsive design-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--page title-->
   <title>Course Explorer</title>
+  <!--link to external stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
+<!--body section-->
 <body>
+  <!--header with main title-->
   <header>
     <h1>Course Explorer</h1>
   </header>
-
+  <!--upload section for loading courses-->
   <section id="upload-section">
     <h2>Load Courses (JSON)</h2>
+    <!--file input for selecting JSON file-->
     <input type="file" id="course-file">
+    <!--error message box hidden by default-->
     <div id="error-box" style="display:none; color:red; margin-top:10px;"></div>
   </section>
-
+  <!--controls section with filters and sorting-->
   <section id="controls-section">
     <fieldset>
       <legend>Filters</legend>
+      <!--department filter dropdown-->
       <label for="department-filter">Department:</label>
       <select id="department-filter"><option value="">All</option></select>
-
+      <!--level filter dropdown-->
       <label for="level-filter">Level:</label>
       <select id="level-filter"><option value="">All</option></select>
-
+      <!--credits filter dropdown-->
       <label for="credits-filter">Credits:</label>
       <select id="credits-filter"><option value="">All</option></select>
-
+      <!--instructor filter dropdown-->
       <label for="instructor-filter">Instructor:</label>
       <select id="instructor-filter"><option value="">All</option></select>
-
+      <!--sort by dropdown-->
       <label for="sort-by">Sort By:</label>
       <select id="sort-by">
         <option value="">None</option>
@@ -44,9 +56,11 @@
       </select>
     </fieldset>
   </section>
-
+  <!--main content layout with course list and details-->
   <main id="main-content">
+    <!--aside for course list-->
     <aside id="course-list"></aside>
+    <!--article for course details-->
     <article id="course-details">
       <h2 id="course-code">Select a course</h2>
       <p id="course-title">Title: —</p>
@@ -58,7 +72,7 @@
       <p id="course-description">Description: —</p>
     </article>
   </main>
-
+  <!--link to external script-->
   <script src="script.js"></script>
 </body>
 </html>
