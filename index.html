@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Course Explorer</h1>
+  </header>
+
+  <section id="upload-section">
+    <h2>Load Courses (JSON)</h2>
+    <input type="file" id="course-file">
+    <div id="error-box" style="display:none; color:red; margin-top:10px;"></div>
+  </section>
+
+  <section id="controls-section">
+    <fieldset>
+      <legend>Filters</legend>
+      <label for="department-filter">Department:</label>
+      <select id="department-filter"><option value="">All</option></select>
+
+      <label for="level-filter">Level:</label>
+      <select id="level-filter"><option value="">All</option></select>
+
+      <label for="credits-filter">Credits:</label>
+      <select id="credits-filter"><option value="">All</option></select>
+
+      <label for="instructor-filter">Instructor:</label>
+      <select id="instructor-filter"><option value="">All</option></select>
+
+      <label for="sort-by">Sort By:</label>
+      <select id="sort-by">
+        <option value="">None</option>
+        <option value="id-asc">ID (A–Z)</option>
+        <option value="id-desc">ID (Z–A)</option>
+        <option value="title-asc">Title (A–Z)</option>
+        <option value="title-desc">Title (Z–A)</option>
+        <option value="semester-asc">Semester (Earliest first)</option>
+        <option value="semester-desc">Semester (Latest first)</option>
+      </select>
+    </fieldset>
+  </section>
+
+  <main id="main-content">
+    <aside id="course-list"></aside>
+    <article id="course-details">
+      <h2 id="course-code">Select a course</h2>
+      <p id="course-title">Title: —</p>
+      <p id="course-department">Department: —</p>
+      <p id="course-level">Level: —</p>
+      <p id="course-credits">Credits: —</p>
+      <p id="course-instructor">Instructor: —</p>
+      <p id="course-semester">Semester: —</p>
+      <p id="course-description">Description: —</p>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
