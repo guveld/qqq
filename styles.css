@@ -3,50 +3,42 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
-
 /*style for header*/
 header {
   text-align: center;
   margin-bottom: 20px;
 }
-
 /*style for upload and controls sections*/
 #upload-section, #controls-section {
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ccc;
 }
-
 /*style for main content layout*/
 #main-content {
   display: flex;
   gap: 20px;
 }
-
 /*style for course list panel*/
 #course-list {
   width: 200px;
   border: 1px solid #ccc;
   padding: 10px;
 }
-
 /*style for individual course item*/
 .course-item {
   cursor: pointer;
   padding: 5px;
 }
-
 /*style for hover effect on course item*/
 .course-item:hover {
   background-color: #f0f0f0;
 }
-
 /*style for selected course item*/
 .course-item.selected {
   background-color: #e0f0ff;
   font-weight: bold;
 }
-
 /*style for course details panel*/
 #course-details {
   flex-grow: 1;
